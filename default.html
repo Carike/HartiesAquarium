@@ -1,74 +1,170 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Hartebeespoort Aquarium</title>
     <meta name="description" content="The only fresh water fish Aquarium in South Africa">
     <meta name="author" content="Carike Blignaut-Staden">
-    <!-- <link rel="stylesheet" href="css/styles.css?v=1.0">-->
-  </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-  <body>
-    <h1>Hartebeespoort Aquarium</h1>
-    <h2>The only fresh water fish Aquarium in South Africa</h2>
-    <div id="about">
-      <p>Established in 1962, the Hartebeespoort Aquarium boasts a variety of both indigenous and tropical freshwater fish.</p>
-      <p>We have an "education through conservation" policy where we
-        <ul>
-          <li>educate the public and</li>
-          <li>provide a safe haven for orphaned and injured aquatic animals.</li>
-        </ul>
-      </p>
-      <p>
-        We house aquatic animals like the Cape Fur Seal, Great White Pelicans and Nile Crocodiles, just to mention a few.</p>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .hero-section {
+            height: 100vh;
+            background-image: url('https://th.bing.com/th/id/OIP.qAgin5Y6MUkuGWA9rezz9AHaFj?pid=ImgDet&rs=1');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .cta-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #e63946;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #d62828;
+            text-decoration: none;
+        }
+
+        .info-card {
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+            transition: transform 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .testimonial-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            background-color: #e9ecef;
+        }
+
+        .testimonial-text {
+            max-width: 700px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 class="animate__animated animate__fadeInDown">Hartebeespoort Aquarium</h1>
+            <h2 class="animate__animated animate__fadeInUp">The only fresh water fish Aquarium in South Africa</h2>
+            <a href="#" class="cta-button animate__animated animate__fadeInUp">Visit Us Today!</a>
+        </div>
     </div>
-    <div id="shows">
-      <h3>Shows</h3>
-      <p>Seal, pelicans and crocodiles shows are both educational and entertaining!
-      </p>
-      <p>Shows are on weekends and public holidays at:
-        <ul>
-          <li>11:00</li>
-          <li>13:00</li>
-          <li>15:00</li>
-        </ul>
 
-      </p>
-      <p>For booked groups shows are scheduled during the week.</p>
+    <div class="container mt-5">
+        <!-- Information Cards -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card info-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Shows</h5>
+                        <p class="card-text">Seal, pelicans, and crocodile shows every weekend!</p>
+                        <p class="card-text">Shows are on weekends and public holidays at:</p>
+                        <ul class="list-unstyled">
+                            <li>11:00</li>
+                            <li>13:00</li>
+                            <li>15:00</li>
+                        </ul>
+                        <p class="card-text">For booked groups, shows are scheduled during the week.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card info-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Entry Fees</h5>
+                        <p class="card-text">Our standard entry fees are:</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Adults:</strong> R120</li>
+                            <li><strong>Pensioners:</strong> R100</li>
+                            <li><strong>Children (4-12):</strong> R50</li>
+                            <li><strong>Children (under 3):</strong> Free</li>
+                        </ul>
+                        <p class="card-text">Discounted rates are offered on groups or school bookings.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card info-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Contact</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Cell number:</strong> 082 469 2979</li>
+                            <li><strong>Email:</strong> hbtaquarium@gmail.com</li>
+                            <li><strong>Address:</strong> Plot 97, Melodi R511, Hartbeespoort</li>
+                        </ul>
+                        <p class="card-text">Want more information or visit us?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3>What our visitors say</h3>
+                <div class="testimonial-slide animate__animated animate__slideInLeft">
+                    <div class="testimonial-text">
+                        "It was an amazing experience for our family. The kids loved the seal show!"
+                    </div>
+                </div>
+                <div class="testimonial-slide animate__animated animate__slideInRight">
+                    <div class="testimonial-text">
+                        "A must-visit place in South Africa. The aquatic life is fascinating!"
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Details Section -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3>Additional Details</h3>
+                <p>We provide free access to the Makalani Bird & Tea Garden situated at the <a href="https://birdandteagarden.simplesite.com/449919123">Makalani Holiday Resort</a>.</p>
+                <p>Take the opportunity to walk around the park's peaceful surroundings while looking at the bright plumage of the various species available. We provide a safe haven for all orphaned and injured aves & mammals.</p>
+                <p>For an additional fee, be bold and enter the Bird of Prey section for a guided tour. Watch a free-flying bird show at 15h00pm! (Weekends and public holidays only)</p>
+            </div>
+        </div>
+
     </div>
-    <div id="fees">
-      <h3>Entry fees</h3>
-      <p>Our standard entry fees are:
-        <ul>
-          <li><strong>Adults:</strong> R120</li>
-          <li><strong>Pensioners:</strong> R100</li>
-          <li><strong>Children (4-12):</strong> R 50</li>
-          <li><strong>Children (under 3):</strong> Free</li>
-        </ul>
 
-      </p>
-      <p>Discounted rates are offered on groups or school bookings.</p>
-    </div>
-    <div id="contact">
-      <h3>Contact details</h3>
-      <p>Want more information or visit us?
-        <ul>
-          <li><strong>Cell number:</strong> 082 469 2979</li>
-          <li><strong>Email:</strong> hbtaquarium@gmail.com</li>
-          <li><strong>Address:</strong> Plot 97, Melodi R511, Hartbeespoort</li>
-        </ul>
+</body>
 
-      </p>
-    </div>
-    <div id="birdpark">
-      <h3>Free access to Makalani Bird & Tea Garden</h3>
-      <p>Your entry fee for the aquarium also gets you free entry into our Bird & Tea Garden situated at the <a href="https://birdandteagarden.simplesite.com/449919123">Makalani Holiday Resort</a>.</p>
-      <p>Take the opportunity to walk around the parks peaceful surroundings while looking at the bright plumage of the various species available. We provide a safe haven for all orphaned and injured aves & mammals.</p>
-      <p>For an additional fee be bold and enter the Bird of Prey section for a guided tour. Watch a free-flying bird show at 15h00pm! (Week-ends and public holidays only)</p>
-    </div>
-    <!--<script src="js/scripts.js"></script>-->
-
-  </body>
-
-</html>
+</html
